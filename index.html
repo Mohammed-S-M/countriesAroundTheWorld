@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Countries</title>
+
+    <!-- Linking Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <!-- Linking JS files -->
+    <script defer src="./script.js"></script>
+    <script defer src="./flagQuiz.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <h1 class="heading">World of countries</h1>
+        <img
+          class="world-map-icon"
+          src="./img/285647_globe_icon.png"
+          alt="earth icon"
+        />
+      </section>
+
+      <section class="search-area">
+        <input
+          class="search-bar"
+          type="text"
+          name="search-countries"
+          placeholder="Enter a name of a country"
+          autocomplete="off"
+        />
+
+        <img
+          class="search-icon"
+          src="./img/746308_map_flag_location_marker_navigation_icon.png"
+          alt="search icon"
+        />
+      </section>
+
+      <button class="quiz">Flags quiz</button>
+    </header>
+
+    <section class="country-div hidden">
+      <!-- div with class "layout" is where we going to insert the HTML from JS -->
+      <div class="layout"></div>
+      <img class="div__close" src="./img/211651_close_round_icon.png" />
+    </section>
+
+    <section class="flags-quiz hidden">
+      <div class="quiz-layout"></div>
+      <img class="quiz-close" src="./img/211651_close_round_icon.png" />
+    </section>
+  </body>
+</html>
